@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>CSS3 Animated Ribbon</title>
+  </head>
+  <body>
+
+    <div class="ribbon">
+      On load animated ribbon
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+
+    <footer>
+      <a href="http:/scottleitch.co.uk" target="_blank">
+        <i class="fa fa-code" aria-hidden="true"></i>
+      </a>
+    </footer>
+
+    <script type="text/javascript">
+      $('.ribbon').on('load', function() {
+        var self = $(this),
+        tails = self.clone(true);
+
+        self.before(tails);
+        $("." + self.attr("class") + ":last").remove();
+      });
+    </script>
+    <script src="http://email.tl.fortawesome.com/c/eJxNjcsOgjAQRb-GLpt2pvax6AJQ_gP7CChYQ4f4-9adyV2dnJwbfUw6JsNWD0IaYYSTFh0IDoDK8lH2Vz2N4jYgyAGwU4I2nstB8yfVsiceys4Wf8lodLSzsfeslQwJhdMILttZg9KRbX4hetcO-w6mtrOmlnn9ZxrVyoQsAI3jj8oOH35GoPZaQyHa0kphaS4_n18Bdje1"></script>
+  </body>
+</html>

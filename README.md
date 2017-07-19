@@ -1,1 +1,1 @@
-# Ribbon Animates On Page Load
+# Animating Ribbon On Page Load
